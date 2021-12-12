@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icons/scanBox.svg" type="svg/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>ScanBox-ListOfGroups page</title>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const amman = { lat: 31.963701, lng: 35.895401 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: amman,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: amman,
+                map: map,
+            });
+        }
+    </script>
+
+</head>
+
+<body class="white">
+    <nav>
+        <img class="logo" src="../icons/ScanBoxText.svg" alt="scanbox logo">
+        <img class="userIcon" src="../icons/user.svg" alt="">
+
+    </nav>
+    <main class="center">
+        <div class="listOfGroupsPageCon">
+            <div class="groupsNames_Map">
+                <ul class="groupNames">
+                    <h4>groups of orders, delivery name or id :</h4>
+                    <li id="unGrouped_defualt"><p>unGrouped(defualt)</p></li>
+                    <a href="./ordersView.html"><li title="open order Details"><p>tawseel</p></li></a>
+                    <li><p>ahmad</p></li>
+                    <li><p>#8377</p></li>
+                    <li><p>#9932</p></li>
+
+                </ul>
+                <div id="map">
+
+                </div>
+            </div>
+
+            <div class="listOfOrders">
+                <div class="columnType">
+                    <p class="name">client</p>
+                    <p class="address">address, region, street,building</p>
+                    <p class="phoneAndIcons">phone</p>
+                </div>
+
+                <div class="row">
+                    <p class="name">ahmad </p>
+
+                    <p class="address">amman, isteklal street, eman building </p>
+                    <div class="phoneAndIcons">
+                        <p class="phoneNumber">0785514677 </p>
+
+                        <div class="Icons">
+                            <img class="qrCode" src="../icons/qr_code_black_24dp.svg" alt="genarate qr code" title="genarate qr code">
+                            <img class="move" src="../icons/drive_file_move_black_24dp.svg" alt="move to another group" title="move to another gruop">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- <div class="add">
+            <h4>add order</h4>
+            <button></button>
+        </div>-->
+    </main>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+        async></script>
+
+</body>
+
+</html>

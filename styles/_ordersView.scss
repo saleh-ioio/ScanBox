@@ -1,0 +1,136 @@
+
+.listOrders_Map{
+    max-width: 845px;
+}
+
+.items{
+    background-color: $darker-black;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.padding{
+    &_horizon{
+        padding: 0 30px;
+    }
+}
+
+ul{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: $darker-black;
+    list-style: none;
+    color: $primary-white;
+
+    overflow-y: scroll;
+
+
+    li{
+        border-radius: 3px;
+        margin: 0;
+        margin-top: 10px;
+        padding-left: 3px;
+        background-color: $dark-black;
+        height: 30px;
+
+
+    }
+    :hover{
+        background-color: $darker-black;
+    }
+}
+
+.listOfOrdersPageCon{
+    display: flex;
+    justify-content: center;
+    color: $primary-white;
+    
+    *{
+        margin: 0;
+        margin-top: 5px;
+        
+    }
+
+
+    
+.orderInfo{
+    min-width: 630px;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: $dark-black;
+    border-radius: 10px;
+    
+    label{
+        margin-right: 20px;
+    }
+    
+    
+}
+}
+
+.region_street{
+    display: flex;
+    justify-content: space-between;    
+    .regionLb{
+        flex: 1;
+        width: max-content;
+    }
+
+    .streetLb{
+        flex: 1;
+        flex-grow: 1;
+        width: 100%;
+    }
+}
+
+
+.ClientInfo{
+    display: flex;
+
+    .nameLb{
+        flex: 2;
+    }
+    
+    .phoneLb{
+        flex: 3;
+    }
+
+    .priceLb{
+        flex: 1;
+    }
+}
+
+.item{
+    display: flex;
+
+    .itemNameLb{
+        flex: 3;
+    }
+    .quantityLb{
+        flex: 1;
+    }
+}
+
+textarea{
+
+    background-color: $dark-black;
+    color: $primary-white;
+}
+
+.buildingInfo{
+    display: flex;
+
+    .buildingLb{
+        flex: 2;
+    }
+    .complexLb{
+        flex: 1;
+    }
+    .floorLb{
+        flex: 1;
+    }
+}

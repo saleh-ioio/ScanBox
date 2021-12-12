@@ -1,0 +1,53 @@
+.logLogo{
+    position: relative;
+    top: -60px;
+    width: 92px;
+}
+.imgHolder{
+    display : flex;
+    justify-content: center;
+}
+.contiener{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logging{
+    min-width: 330px;
+    max-width: 407px;
+    height: fit-content;
+    padding:20px 0;
+    border-radius: 10px;
+    background-color: $dark-black;
+}
+label{
+    margin-top: 2.25rem;
+   }
+input{
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  color: white;
+  background-color: $primary-black;
+  border-style: solid;
+  border-radius: 5px;
+  border-width:2px ;
+  border-color: white;
+  padding: 1px 0;
+}
+form{
+    color: white;
+    font-weight: 700;
+    margin-left: 2.75rem;
+    margin-right: 2.75rem;
+}
+.submitB{
+    border-style: none;
+
+    &:hover{
+        background-color: $darker-black;
+    }
+}

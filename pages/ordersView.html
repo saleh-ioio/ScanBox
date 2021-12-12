@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../icons/scanBox.svg" type="svg/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>ScanBox-order details page</title>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const amman = { lat: 31.963701, lng: 35.895401 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: amman,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: amman,
+        map: map,
+      });
+    }
+  </script>
+
+</head>
+
+<body class="white ">
+  <nav class="black">
+    <img class="logo" src="../icons/ScanBoxText.svg" alt="scanbox logo">
+    <img class="userIcon" src="../icons/user.svg" alt="">
+
+  </nav>
+  <main class="white padding_horizon">
+    <div class="listOfOrdersPageCon">
+      <div class="listOrders_Map">
+
+      
+        <ul class="groupNames">
+          <h4>order (clients, region, street):</h4>
+          <li><p>unGrouped</p></li>  
+          <li><p>ahmad, amman, 7th circle</p></li>
+          <li><p>ali, zarqa, autostrad street</p></li>
+          <li><p>ali, amman, university street</p></li>
+
+        </ul>
+        <div id="map">
+
+        </div>
+      </div>
+
+      <div class="orderInfo">
+        <h4>info:</h4>
+        <form action="#">
+
+          <div class="ClientInfo">
+            <label class="nameLb">
+              <p>Client name:</p>
+              <input type="text" name="name" id="name" placeholder="Ex: ahmad">
+            </label>
+            <label class="phoneLb">
+              <p>phone</p>
+              <input type="tel" name="phoneNum" id="phone" placeholder="0789...">
+            </label>
+
+            <label class="priceLb">
+              <p>price</p>
+              <input type="number" name="price" id="price" placeholder="Ex: 40">
+            </label>
+          </div>
+
+
+          <div class="addressCon"></div>
+          <h4>address:</h4>
+
+          <label>
+            <p>Location Link</p>
+            <input type="url" name="location" id="location" placeholder="googlemaps link">
+          </label>
+
+          <div class="region_street">
+            <label class="regionLb">
+              <p>region</p>
+              <input type="text" name="region" id="region" placeholder="Ex: amman">
+            </label>
+
+            <label class="streetLb">
+              <p>street</p>
+              <input type="text" name="street" id="street" placeholder="Ex: university street">
+            </label>
+          </div>
+
+          <div class="buildingInfo">
+            <label class="buildingLb">
+              <p>building</p>
+              <input type="text" name="building" id="building" placeholder="Ex: eman building 20">
+            </label>
+
+            <label class="complexLb">
+              <p>complex number</p>
+              <input type="number" name="complex" id="complex" placeholder="Ex: 201">
+            </label>
+
+            <label class="floorLb">
+              <p>floor number</p>
+              <input type="number" name="floor" id="floor" placeholder="Ex: 40">
+            </label>
+          </div>
+
+          <div class="items">
+            <h2>items:</h2>
+            <!--
+              
+              <div class="add">
+              <h5>add Item</h5>
+              <button></button>
+            </div>
+            -->
+
+
+            <div class="item">
+
+              <label class="itemNameLb">
+                <p>item name</p>
+                <input type="text" name="item1" id="item1" placeholder="Ex: apple">
+              </label>
+
+              <label class="quantityLb">
+                <p>quantity</p>
+                <input type="number" name="quantity" id="quantity" placeholder="Ex: 40">
+              </label>
+            </div>
+          </div>
+
+          <div class="note">
+            <h4>
+              note:
+            </h4>
+
+            <textarea name="note" id="note" cols="50" rows="6"></textarea>
+            <!--
+            <label>
+              <input type="text" name="note" id="note" placeholder="........">
+            </label>-->
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    async></script>
+
+</body>
+
+</html>
